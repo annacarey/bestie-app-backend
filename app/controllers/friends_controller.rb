@@ -40,20 +40,20 @@ class FriendsController < ApplicationController
 
     def confirmation
         user = User.find_by(id: params[:number])
+        name = user.name
         phone_number = user.phone_number
         account_sid = ENV["TWILIO_ACCOUNT_SID"]
         auth_token = ENV["TWILIO_AUTH_TOKEN"]
-        
-        @client = Twilio::REST::Client.new(account_sid, auth_token)
-
-        message = @client.messages
-        .create(
-            body: 'Thank you for signing up to Bestie!',
-            from: '+17867237843',
-            to: phone_number
-        )
-
+        @client = Twilio::REST::Client.new(account_sid, auth_token) 
+         
+        message = @client.messages.create( 
+                body: "Hi #{name}, Remember to reach out to Rachel!", 
+                from: ENV["TWILIO_PHONE_NUMBER"],       
+                to: '+19149074672' 
+            ) 
+         
         puts message.sid
+        
     end 
 
     private 
