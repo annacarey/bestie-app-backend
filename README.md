@@ -1,10 +1,16 @@
-# Bestie ![logo](images/icons/favicon-32x32.png "logo")
+# Bestie ![logo](https://github.com/annacarey/bestie-app-frontend/blob/master/images/icons/favicon-32x32.png?raw=true "logo")
 
 Bestie (also known as the Friend CRM) helps you stay in touch with the closest people in your life. CRM stands for customer relationship management tool and this will be familiar to those in sales and marketing, who use these tools to help manage relationships with potential current customers and clients. Similarly, Bestie enables users to manage the relationships with friends and family.
 
 Frontend repo: https://github.com/annacarey/bestie-app-frontend
 
 You can find the application live at: http://bestie-app.herokuapp.com/
+
+## Demo Video
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=DqGg3ela93s
+" target="_blank"><img src="http://img.youtube.com/vi/DqGg3ela93s/0.jpg" 
+alt="Bestie demo video" width="240" height="180" border="10" /></a>
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
